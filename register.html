@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>login</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Questrial&family=Unbounded:wght@200;300;400&display=swap" rel="stylesheet">
+     <style type="text/css">
+	   body
+	   {
+	      background-image: url("loginimg.jpg");
+	      background-repeat: no-repeat;
+	      background-size: cover;
+	    }
+        .create
+        {
+        	background-color: white;
+        	width: 25vw;
+        	padding: 20px;
+        	margin: auto;
+        	margin-top:6%;
+        	text-align: center;
+        	border-radius: 10px;
+        }
+        .hello
+        {
+        	font-family: 'Unbounded', cursive;
+			font-weight: 400;
+			font-size: 2rem;
+			margin: 15px;
+
+        }
+        .input
+        {
+        	font-family: 'Unbounded', cursive;
+			font-weight: 200;
+			letter-spacing: 1px;
+        	background-color: rgba(207, 207, 207,0.8);
+        	padding: 10px;
+        	margin: 8px;
+        	width: 20vw;
+        	border: none;
+        	border-radius: 5px;
+        }
+        .name{
+        	margin: 3px;
+        	width: 9vw;
+        }
+        .num{
+        	margin-right: 2px;
+        	width: 12.5vw;
+        	display: inline;
+
+        }
+        .gender{
+        	width:7vw;
+        	margin-left:2px;
+        }
+        .btn
+        {
+			font-family: 'Unbounded', cursive;
+			font-weight: 400;
+        	width: 21.5vw;
+        	background-color: black;
+        	color: white;
+        }
+        .btn:hover
+        {
+        	font-weight: bolder;
+        	background-color: white;
+        	color: black;
+        	border: 3px solid black;
+        }
+        .login
+        {
+        	font-family: 'Unbounded', cursive;
+			font-weight: normal;
+        	text-align: center;
+            color: dimgray ;
+        	font-size: 0.6rem;
+        	text-decoration: none;
+        	margin:auto;
+        	margin-right: 0px;
+        }
+        .link
+        {
+        	font-weight: 300;
+        	text-decoration: none;
+        	color: #0b0423;
+        	font-weight: bold;
+        	margin-left: 2px;
+        }
+        .link:hover{
+        	text-decoration: underline;
+        }
+        .end
+        {
+        	font-family: 'Unbounded', cursive;
+        	font-weight: 400;
+        	color: white;
+        	text-align: center;
+        	margin-top: 2.6%;
+        	margin-bottom: 0%;	
+        }
+        
+        @media (min-width: 350px max-width:767px) {
+  		body {
+		    background-image: url("loginimg.jpg"); 
+		    background-size: auto; 
+		    background-repeat: repeat;
+		    padding: 20px;
+		  }
+         .create
+        {
+        	background-color: white;
+        	width: 50vw;
+        	padding: 20px;
+        	margin: auto;
+        	margin-top:6%;
+        	text-align: center;
+        	border-radius: 10px;
+        }
+        .input
+        {
+        	font-family: 'Unbounded', cursive;
+			font-weight: 200;
+			font-size: 0.6rem;
+			letter-spacing: 1px;
+        	background-color: rgba(207, 207, 207,0.8);
+        	padding: 10px;
+        	margin: 4px;
+        	width: 40vw;
+        	border: none;
+        	border-radius: 5px;
+        }
+        .name{
+        	margin: 3px;
+        	width: 17vw;
+        }
+        .num{
+        	margin-right: 2.5px;
+        	width: 23vw;
+        	display: inline;
+
+        }
+        .gender{
+        	width:15vw;
+        	margin-left:2.5px;
+        }
+        .btn
+        {
+			font-family: 'Unbounded', cursive;
+			font-weight: 400;
+        	width: 43.5vw;
+        	background-color: black;
+        	color: white;
+        }
+		}
+	</style>
+</head>
+<body> 
+	<div class="create">
+
+		<h2 class="hello">Hello There!</h2>
+		<h5 class="hello" style="font-size: 0.8rem;">We just need little info about you.</h5>
+		<!-- first name and last name -->
+
+		<input class="name input" type="text" name="text" 
+		placeholder="First name" id="fname">
+
+		<input class="name input" type="text" name="text" 
+		placeholder="Last name" id="lname">
+ 
+ 		<!-- email username and number -->
+
+		<input class="input" type="email" name="email" 
+		placeholder="Email" id="email"><br>
+
+		<input class="user input" type="text" name="username" 
+		placeholder="Username" id="username"><br>
+
+		<input class="num input" type="number" name="ph" 
+		placeholder="Phone number" id="ph">
+
+		<select class=" gender input" title="gender">
+			<option>Male</option>
+			<option>Female</option>
+			<option>Others</option>
+		</select>
+
+		<input class="pass input" type="password" name="password" 
+		placeholder="Password" id="password"><br>
+
+		<input class="pass input" type="password" name="password" 
+		placeholder="Confirm Password" id="password"><br>
+
+		<button class="btn input" type="submit" >Get Started</button><br>
+
+		<span class="login">Already have an account?</span>
+
+		<a href="login.html" class="login link">Login here!</a>
+	</div>
+	<h2 class="end"> by RaghuVarma</h2>
+
+</body>
+</html>
